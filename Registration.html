@@ -37,21 +37,20 @@
     <div class="registratino">
         <form action="">
             <h1>Регистрация</h1>
-            <input type="text" value="Имя" class="text">
-            <input type="text" value="Фамилия" class="text">
-            <input type="text" value="Логин " class="text">
-            <input type="text" value="Пароль" class="text">
-            <input type="text" value="Пароль (повторно)" class="text">
-            <input type="email" value="Email" class="text">
+            <input type="text" class="text" placeholder="Имя" id="forename">
+            <input type="text" class="text" placeholder="Фамилия" id ="surname">
+            <input type="text" class="text" placeholder="Логин" id ="login">
+            <input type="text" class="text" placeholder="Пароль" id = "password">
+            <input type="text" class="text" placeholder="Пароль (повторно)" id="verifecationPassword">
+            <input type="email" class="text" placeholder="Email" id="EmailUser">
             <div class="butt">
-                <button>Зарегистрироваться</button>
+                <button id ="btnRegisration">Зарегистрироваться</button>
             </div>
             <div class="consent">
-                <input type="checkbox"> <p>Согласие с правилами регистрации</p>
+                <input type="checkbox" id="chxСonfirmation"> <p>Согласие с правилами регистрации</p>
             </div>
-            
         </form>
     </div>
-    
+    <script src="src/registration.js"></script>
 </body>
 </html>
