@@ -10,6 +10,7 @@ if(!localStorage.getItem("Users.json"))
    var  data ={
         name: 'Alice',
         surname:'Gazizullina',
+        login: 'Alice',
         password: '',
         email:'digpig@gmai.ru',
         basket: []
@@ -17,6 +18,7 @@ if(!localStorage.getItem("Users.json"))
     var data2 ={
         name: 'Marina',
         surname:'Belochia',
+        login: 'Marina',
         password:'1',
         email:'MBel7@mail.ru',
         basket: []
@@ -42,18 +44,33 @@ var chxСonfirmation =document.getElementById('chxСonfirmation');
 
 //по нажатию на кнопку проверяем корректность занесения данных и сохраняем в Users.
 document.getElementById('btnRegisration').addEventListener('click',function(){
-    console.log(client.value);
-    console.log(surname.value);
-    console.log(login.value);
-    console.log(password.value);
-    console.log(verifecationPassword.value);
+
     if(password.value!=verifecationPassword.value)
     {
         window.alert("пароль и подтверждение пароля не совпадают, операция регестрации прервана.");
+    }else
+    {
+        //проверяем нажал ли пользователь на кнопку вернутся назад. 
+        if(chxСonfirmation.checked==true){
+        Users.push({
+            name: client.value,
+            surname:surname.value,
+            login: login.value,
+            password: password.value,
+            email:EmailUser.value,
+            basket: []
+        }) //создаем нового пользователя
+        var jasonRecord = JSON.stringify(Users);
+        localStorage.setItem('Users.json', jasonRecord);
+        //записать и перейти а новую страницу.
+        // setTimeout(()=>alert('Спасибо вы удачно зарегестрировались'),1000);
+        location.href= 'main_index.html';
     }
-    console.log(EmailUser.value);
-    console.log(chxСonfirmation.value);
-    //save Users
+        else
+        {
+            window.alert('При регисрации необходимо дать согласие с правилами.');
+        }
+    }
 })
 
 
