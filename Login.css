@@ -112,14 +112,14 @@ form{
     border-radius: 50px;
     background: rgba(0, 0, 0, 0.63);
     width: 750px;
-    height: 1200px;
+    height: 900px;
     margin-right: 60px;
     display: grid;
     align-items:center;
 }
 
 form h1{
-    color: #FFB803;
+    color: #FF03D7;
     font-size: 80px;
     display: flex;
     justify-content: center;
@@ -127,27 +127,33 @@ form h1{
 }
 
 form .text{
-    color: #FFB803;
+    color: #FF03D7;
     width: 509px;
     border:none;
-    border-bottom: solid #FFB803 ;
+    border-bottom: solid #FF03D7;
     margin-left: 17%;
     background-color:transparent;
     font-size: 48px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 form ::-webkit-input-placeholder {
-  color: #FFB803;
+    color: #FF03D7;
 }
 
+form a{
+    color: #D2B7FF;
+    text-align: center;
+    font-family: Old Standard TT;
+    font-size: 32px;
+}
 form button{
     width: 358px;
     height: 95px;
     color: #FFF;
-    font-size: 32px;
+    font-size: 48px;
     border-radius: 50px;
-    background: linear-gradient(270deg, #00E0FF 2.24%, #5C73FF 16.78%, #982BFF 32.88%, #BD00FF 48.54%, #982BFF 64.2%, #488AFF 82.03%, #00E0FF 94.31%);
+    background: linear-gradient(270deg, #7A2BE4 16.9%, #D528BD 48.27%, #7A2BE4 83.27%);
     border:none;
 }
 

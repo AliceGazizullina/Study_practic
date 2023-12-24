@@ -1,10 +1,6 @@
 // Таблица пользователей Users (name,surname,login,password,Email)
 // удалить из локального репозитория.
-<<<<<<< HEAD
 //localStorage.removeItem('Users.json'); //если вдруг будет необходимо удалить из базы пользователей.
-=======
-localStorage.removeItem('Users.json'); //если вдруг будет необходимо удалить из базы пользователей.
->>>>>>> 0b0e778ebd257adc0bb117de82fa3e6f61930db8
 //таблица пользователей.
 var Users =[];
 //если таблица еще не создана то создать таблицу пользователей.
@@ -67,11 +63,7 @@ document.getElementById('btnRegisration').addEventListener('click',function(){
         var jasonRecord = JSON.stringify(Users);
         localStorage.setItem('Users.json', jasonRecord);
         //записать и перейти а новую страницу.
-<<<<<<< HEAD
         //setTimeout(()=>alert('Спасибо вы удачно зарегестрировались'),1000);
-=======
-        // setTimeout(()=>alert('Спасибо вы удачно зарегестрировались'),1000);
->>>>>>> 0b0e778ebd257adc0bb117de82fa3e6f61930db8
         location.href= 'main_index.html';
     }
         else
@@ -80,6 +72,8 @@ document.getElementById('btnRegisration').addEventListener('click',function(){
         }
     }
 })
+
+
 
 
 
