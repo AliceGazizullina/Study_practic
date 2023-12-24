@@ -34,24 +34,76 @@
         
     </header>
 
-    <div class="registratino">
-        <form action="">
-            <h1>Регистрация</h1>
-            <input type="text" value="Имя" class="text">
-            <input type="text" value="Фамилия" class="text">
-            <input type="text" value="Логин " class="text">
-            <input type="text" value="Пароль" class="text">
-            <input type="text" value="Пароль (повторно)" class="text">
-            <input type="email" value="Email" class="text">
-            <div class="butt">
-                <button>Зарегистрироваться</button>
-            </div>
-            <div class="consent">
-                <input type="checkbox"> <p>Согласие с правилами регистрации</p>
-            </div>
-            
-        </form>
+    <div class="registratino_circles">
+        <div class="circle-purple-blur"></div>
+        <div class="circle-purple"></div>
+        <div class="circle-orange-blur"></div>
+        <div class="circle-orange"></div>
+
+        <div class="registratino">
+            <form action="">
+                <h1>Регистрация</h1>
+                <input type="text" class="text" placeholder="Имя" id="forename">
+                <input type="text" class="text" placeholder="Фамилия" id ="surname">
+                <input type="text" class="text" placeholder="Логин" id ="login">
+                <input type="text" class="text" placeholder="Пароль" id = "password">
+                <input type="text" class="text" placeholder="Пароль (повторно)" id="verifecationPassword">
+                <input type="email" class="text" placeholder="Email" id="EmailUser">
+                <div class="butt">
+                    <button id ="btnRegisration">Зарегистрироваться</button>
+                </div>
+                <div class="consent">
+                    <input type="checkbox" id="chxСonfirmation"> <label for="">Согласие с правилами регистрации</label>
+                </div>
+                
+            </form>
+        </div>
     </div>
     
+    <div class="rainbow-line"></div>
+    <footer>
+        
+            
+        <div class="menu">
+            
+            <h1>Меню</h1>
+            <div class="gray-line"></div>
+
+            <div class="href-contacts">
+                <div class="hrefs">
+                    <a href="#">О нас</a>
+                    <a href="#">Каталог</a>
+                    <a href="#">Товар</a>
+                    <a href="#">Контакты</a>
+                </div>
+                
+                <div class="icons-email-number">
+                    <div class="icons">
+                        <a href="#"><img src="imges/healthicons_phone-negative.svg" alt=""></a>
+                        <a href="#"><img src="imges/icon1.svg" alt=""></a>
+                        <a href="#"><img src="imges/icon2.svg" alt=""></a>
+                    </div>
+                    <div class="email">
+                        <p>Email</p>
+                        <p class="p2">kaskamalpgka@gmail.com</p>
+                    </div>
+                    <div class="number">
+                        <p>Номер</p>
+                        <p class="p2">89824948325</p>
+                    </div>
+                    
+                </div>
+                <div class="map">
+                    <img src="imges/Карта 1.png" alt="">
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+    </footer>
+
+    <script src="src/registration.js"></script>
 </body>
 </html>

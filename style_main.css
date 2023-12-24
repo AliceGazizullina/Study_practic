@@ -107,7 +107,7 @@ body{
 .header-left ul{
     border: 10px;
 }
-.header-right a:hover{
+.header-right li a:hover{
     padding: 10px;
     background-color: #51006e;
     
